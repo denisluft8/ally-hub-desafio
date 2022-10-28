@@ -14,9 +14,18 @@ export const DivStyled = styled.div`
   font-family: "Plus Jakarta Sans", sans-serif;
   gap: 22px;
   height: 650px;
+  margin: 12px;
   width: 600px;
+  
 
   & > h1 {
     padding-bottom: 24px;
+    color: #404040;
+  }
+
+  @media (max-width: 768px){
+    height: 600px;
+    width: 550px;
+
   }
 `;

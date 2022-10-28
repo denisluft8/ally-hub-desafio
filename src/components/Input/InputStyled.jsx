@@ -6,22 +6,22 @@ export const DivStyled = styled.div`
 
 export const InputStyled = styled.input`
   background: #fdfdfd;
-  border: 1px solid gray;
+  border: 1px solid #cccccc;
   border-radius: 6px;
-  line-height: 6ex;
+  line-height: 5ex;
   margin: 10px;
-  outline-color: blue;
+  outline-color: #2684ff;
   padding-left: 12px;
   position: relative;
   width: 400px;
 `;
 export const LabelStyled = styled.label`
-  background: #f7f7f7;
-  border-radius: 10px;
+  background: #F1F1F1;
+  color: #808080;
   font-size: 20px;
   left: 1.5em;
   padding: 0 5px;
   position: absolute;
-  top: -0.3em;
+  top: -0.6em;
   z-index: 1;
 `;
