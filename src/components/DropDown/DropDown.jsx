@@ -3,7 +3,7 @@ import api from "../../Services/api";
 import Select from "react-select";
 import { DropStyled } from "./DropDownStyled";
 
-export const DropDown = ({ itemsOption, placeholder }) => {
+export const DropDown = ({ itemsOption, placeholder, onChange }) => {
   const [options, setOptions] = useState([]);
 
   const loadOptions = async (op) => {
@@ -22,20 +22,17 @@ export const DropDown = ({ itemsOption, placeholder }) => {
 
   useEffect(() => {
     loadOptions(itemsOption);
-  }, []);
-
-  useEffect(() => {
-    console.log(options);
-  }, [options]);
+  }, [itemsOption]);
 
   return (
     <>
       <DropStyled>
         <Select
+          closeMenuOnSelect={false}
           isMulti
+          onChange={onChange}
           options={options}
           placeholder={placeholder}
-          closeMenuOnSelect={false}
         />
       </DropStyled>
     </>

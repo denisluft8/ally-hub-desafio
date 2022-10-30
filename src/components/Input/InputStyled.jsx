@@ -16,12 +16,12 @@ export const InputStyled = styled.input`
   width: 400px;
 `;
 export const LabelStyled = styled.label`
-  background: #F1F1F1;
+  background: #ECECEC;
   color: #808080;
   font-size: 20px;
   left: 1.5em;
   padding: 0 5px;
   position: absolute;
-  top: -0.6em;
+  top: -0.65em;
   z-index: 1;
 `;
